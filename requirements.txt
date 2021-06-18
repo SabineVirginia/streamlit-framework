@@ -6,3 +6,5 @@ altair
 bokeh
 requests
 alpha-vantage
+os
+datetime
