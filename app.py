@@ -1,12 +1,12 @@
 import os
-from boto.s3.connection import S3Connection
+# from boto.s3.connection import S3Connection
 from alpha_vantage.timeseries import TimeSeries
 import streamlit as st
 import pandas as pd
 from datetime import datetime
 
-# API_key = os.environ.get('API_ALPHA_VANTAGE')
-API_key = S3Connection(os.environ['API_ALPHA_VANTAGE'])
+API_key = os.environ.get('API_ALPHA_VANTAGE')
+# API_key = S3Connection(os.environ['API_ALPHA_VANTAGE'])
 
 ts = TimeSeries(key=API_key, output_format='pandas')
 
