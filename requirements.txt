@@ -8,3 +8,4 @@ requests
 alpha-vantage
 os
 datetime
+boto
