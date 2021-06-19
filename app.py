@@ -11,11 +11,11 @@ ts = TimeSeries(key=API_key, output_format='pandas')
 # Title
 # Alternative way: st.title('Stock Prices (Monthly)')
 st.write("""
-# Stock Prices 2021
+# Stock Prices
 """)
 
 stock = st.text_input('Enter a ticker:')
-month = st.selectbox('Select a month:',['January','February','March','April','May','June'])
+month = st.selectbox('Select one of the last five months:',['February','March','April','May','June'])
 
 if len(stock) > 0:
     data = ts.get_daily_adjusted(stock)
