@@ -3,9 +3,7 @@ streamlit
 plotly
 python-dotenv
 altair
-bokeh
 requests
 alpha-vantage
 datetime
 boto
-bokeh
